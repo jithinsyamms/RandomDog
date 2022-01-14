@@ -21,11 +21,15 @@ class GenerateDogViewController: UIViewController {
     }
     @IBAction func generateTapped(_ sender: Any) {
         dogViewModel.fetchRandomDog()
+        generateButton.isEnabled = false
+        generateButton.alpha = 0.3
     }
 }
 
 extension GenerateDogViewController: RandomDogProtocol {
     func imageDownloaded(image: UIImage) {
         dogImage.image = image
+        generateButton.isEnabled = true
+        generateButton.alpha = 1
     }
 }

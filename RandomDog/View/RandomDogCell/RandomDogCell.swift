@@ -9,16 +9,19 @@ import UIKit
 
 class RandomDogCell: UICollectionViewCell {
     @IBOutlet weak var dogImageView: UIImageView!
+    @IBOutlet weak var width: NSLayoutConstraint!
     
+    @IBOutlet weak var height: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
 
 
     }
     func setImage(image:UIImage) {
-        dogImageView.clipsToBounds = true
-        //dogImageView.contentMode = .scaleToFill
         dogImageView.image = image
+        dogImageView.contentMode = .scaleAspectFit
+        height.constant = UIScreen.main.bounds.height
+        width.constant = UIScreen.main.bounds.width
     }
 
 }

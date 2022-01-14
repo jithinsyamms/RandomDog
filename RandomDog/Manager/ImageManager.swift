@@ -9,7 +9,7 @@ import UIKit
 
 class ImageManager {
 
-    static let maxImageCount = 5
+    static let maxImageCount = 20
     static let shared = ImageManager()
     private var imageCache: ImageCache
     private var coreData: CoreDataManager

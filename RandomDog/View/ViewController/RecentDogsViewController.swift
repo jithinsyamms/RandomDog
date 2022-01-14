@@ -20,7 +20,7 @@ class RecentDogsViewController: UIViewController {
     var dogDataModel = RandomDogViewModel()
     var recentDogs:[UIImage] = []
 
-    private let itemsPerRow: CGFloat = 1.3
+    private let itemsPerRow: CGFloat = 1.2
     private let sectionInsets = UIEdgeInsets(
         top: 0.0,
         left: 8.0,
@@ -74,15 +74,23 @@ extension RecentDogsViewController: UICollectionViewDelegateFlowLayout {
                                sizeForItemAt indexPath: IndexPath) -> CGSize {
 
 
-        let widthPerItem = collectionView.bounds.size.width/1.2
-        let heightPerItem = collectionView.bounds.size.height
-        return CGSize(width: widthPerItem, height: heightPerItem)
+        var totalSpace: CGFloat = 0
+        if let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout {
+            totalSpace = flowLayout.sectionInset.left
+                + flowLayout.sectionInset.right
+                + (flowLayout.minimumInteritemSpacing * CGFloat(itemsPerRow - 1))
+        }
+        let width = Int((collectionView.bounds.width - totalSpace) / CGFloat(itemsPerRow))
+        let height = width
+        return CGSize(width: width, height: height )
     }
+
 
     func collectionView( _ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                          insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets
     }
+
 
 
 }

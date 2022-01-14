@@ -5,32 +5,33 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RandomDogCell" id="gTV-IL-0wX" customClass="RandomDogCell" customModule="RandomDog" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="181" height="142"/>
+            <rect key="frame" x="0.0" y="0.0" width="153" height="113"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="181" height="142"/>
+                <rect key="frame" x="0.0" y="0.0" width="153" height="113"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-hg-O3Y">
-                        <rect key="frame" x="0.0" y="0.0" width="181" height="142"/>
+                        <rect key="frame" x="0.0" y="0.0" width="153" height="113"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZeD-Cr-BiQ">
-                                <rect key="frame" x="0.0" y="0.0" width="181" height="142"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZeD-Cr-BiQ">
+                                <rect key="frame" x="0.0" y="0.0" width="153" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="K9T-Gg-Wra"/>
+                                    <constraint firstAttribute="width" constant="153" id="fae-tY-Fdh"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ZeD-Cr-BiQ" firstAttribute="centerY" secondItem="Pd2-hg-O3Y" secondAttribute="centerY" id="38x-Fx-SsI"/>
-                            <constraint firstItem="ZeD-Cr-BiQ" firstAttribute="height" secondItem="Pd2-hg-O3Y" secondAttribute="height" id="90D-Np-Mhx"/>
-                            <constraint firstItem="ZeD-Cr-BiQ" firstAttribute="centerX" secondItem="Pd2-hg-O3Y" secondAttribute="centerX" id="PE9-bx-FBl"/>
-                            <constraint firstItem="ZeD-Cr-BiQ" firstAttribute="width" secondItem="Pd2-hg-O3Y" secondAttribute="width" id="bY4-7m-Vlo"/>
+                            <constraint firstItem="ZeD-Cr-BiQ" firstAttribute="centerX" secondItem="Pd2-hg-O3Y" secondAttribute="centerX" id="ZNi-AH-ikZ"/>
+                            <constraint firstItem="ZeD-Cr-BiQ" firstAttribute="centerY" secondItem="Pd2-hg-O3Y" secondAttribute="centerY" id="s11-6I-l7Q"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -38,22 +39,17 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="Pd2-hg-O3Y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5I0-45-A1e"/>
-                <constraint firstItem="Pd2-hg-O3Y" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="E9F-fW-B3s"/>
-                <constraint firstItem="Pd2-hg-O3Y" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="Uw4-kl-wZj"/>
                 <constraint firstAttribute="trailing" secondItem="Pd2-hg-O3Y" secondAttribute="trailing" id="VI4-HJ-apq"/>
                 <constraint firstItem="Pd2-hg-O3Y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zj2-sC-hiA"/>
                 <constraint firstAttribute="bottom" secondItem="Pd2-hg-O3Y" secondAttribute="bottom" id="qP9-S7-Adb"/>
             </constraints>
-            <size key="customSize" width="181" height="142"/>
+            <size key="customSize" width="153" height="113"/>
             <connections>
                 <outlet property="dogImageView" destination="ZeD-Cr-BiQ" id="gcj-km-nZk"/>
+                <outlet property="height" destination="K9T-Gg-Wra" id="OHb-Gm-x8V"/>
+                <outlet property="width" destination="fae-tY-Fdh" id="lYF-pe-bfM"/>
             </connections>
-            <point key="canvasLocation" x="-86.231884057971016" y="105.80357142857143"/>
+            <point key="canvasLocation" x="-106.5217391304348" y="96.09375"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

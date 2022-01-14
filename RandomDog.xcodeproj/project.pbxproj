@@ -9,23 +9,47 @@
 /* Begin PBXBuildFile section */
 		5D2CB7BA2791698B003D466F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7B92791698B003D466F /* AppDelegate.swift */; };
 		5D2CB7BC2791698B003D466F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7BB2791698B003D466F /* SceneDelegate.swift */; };
-		5D2CB7BE2791698B003D466F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7BD2791698B003D466F /* ViewController.swift */; };
 		5D2CB7C12791698B003D466F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2CB7BF2791698B003D466F /* Main.storyboard */; };
 		5D2CB7C42791698B003D466F /* RandomDog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7C22791698B003D466F /* RandomDog.xcdatamodeld */; };
 		5D2CB7C62791698D003D466F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D2CB7C52791698D003D466F /* Assets.xcassets */; };
 		5D2CB7C92791698D003D466F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2CB7C72791698D003D466F /* LaunchScreen.storyboard */; };
+		5D2CB7D427916B87003D466F /* RandomDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7D327916B87003D466F /* RandomDogViewController.swift */; };
+		5D2CB7D627916B9C003D466F /* GenerateDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7D527916B9C003D466F /* GenerateDogViewController.swift */; };
+		5D2CB7D827916BB1003D466F /* RecentDogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7D727916BB1003D466F /* RecentDogsViewController.swift */; };
+		5D2CB7DC27917C67003D466F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7DB27917C67003D466F /* NetworkRequest.swift */; };
+		5D2CB7DE27917C92003D466F /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7DD27917C92003D466F /* APIResource.swift */; };
+		5D2CB7E027917E74003D466F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7DF27917E74003D466F /* NetworkError.swift */; };
+		5D2CB7E427918039003D466F /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7E327918039003D466F /* APIRequest.swift */; };
+		5D2CB7E92791810F003D466F /* RandomDogResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7E82791810F003D466F /* RandomDogResource.swift */; };
+		5D2CB7EC2791813E003D466F /* RandomDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7EB2791813E003D466F /* RandomDog.swift */; };
+		5D2CB7EE27918281003D466F /* RandomDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7ED27918281003D466F /* RandomDogViewModel.swift */; };
+		5D2CB7F22791871C003D466F /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7F12791871C003D466F /* DataRequest.swift */; };
+		5D2CB7F42791889D003D466F /* DataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7F32791889D003D466F /* DataResource.swift */; };
+		5D2CB7F827919015003D466F /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7F727919015003D466F /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D2CB7B62791698A003D466F /* RandomDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2CB7B92791698B003D466F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D2CB7BB2791698B003D466F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5D2CB7BD2791698B003D466F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D2CB7C02791698B003D466F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D2CB7C32791698B003D466F /* RandomDog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomDog.xcdatamodel; sourceTree = "<group>"; };
 		5D2CB7C52791698D003D466F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D2CB7C82791698D003D466F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D2CB7CA2791698D003D466F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D2CB7D327916B87003D466F /* RandomDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogViewController.swift; sourceTree = "<group>"; };
+		5D2CB7D527916B9C003D466F /* GenerateDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateDogViewController.swift; sourceTree = "<group>"; };
+		5D2CB7D727916BB1003D466F /* RecentDogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentDogsViewController.swift; sourceTree = "<group>"; };
+		5D2CB7DB27917C67003D466F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		5D2CB7DD27917C92003D466F /* APIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResource.swift; sourceTree = "<group>"; };
+		5D2CB7DF27917E74003D466F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		5D2CB7E327918039003D466F /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		5D2CB7E82791810F003D466F /* RandomDogResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogResource.swift; sourceTree = "<group>"; };
+		5D2CB7EB2791813E003D466F /* RandomDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDog.swift; sourceTree = "<group>"; };
+		5D2CB7ED27918281003D466F /* RandomDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogViewModel.swift; sourceTree = "<group>"; };
+		5D2CB7F12791871C003D466F /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		5D2CB7F32791889D003D466F /* DataResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResource.swift; sourceTree = "<group>"; };
+		5D2CB7F727919015003D466F /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +82,13 @@
 		5D2CB7B82791698A003D466F /* RandomDog */ = {
 			isa = PBXGroup;
 			children = (
+				5D2CB7F627919000003D466F /* ImageCache */,
+				5D2CB7F527918FDC003D466F /* Model */,
+				5D2CB7D927917C25003D466F /* Network */,
+				5D2CB7D127916A4B003D466F /* ViewModel */,
+				5D2CB7D027916A43003D466F /* View */,
 				5D2CB7B92791698B003D466F /* AppDelegate.swift */,
 				5D2CB7BB2791698B003D466F /* SceneDelegate.swift */,
-				5D2CB7BD2791698B003D466F /* ViewController.swift */,
 				5D2CB7BF2791698B003D466F /* Main.storyboard */,
 				5D2CB7C52791698D003D466F /* Assets.xcassets */,
 				5D2CB7C72791698D003D466F /* LaunchScreen.storyboard */,
@@ -68,6 +96,78 @@
 				5D2CB7C22791698B003D466F /* RandomDog.xcdatamodeld */,
 			);
 			path = RandomDog;
+			sourceTree = "<group>";
+		};
+		5D2CB7D027916A43003D466F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CB7D227916A5D003D466F /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D2CB7D127916A4B003D466F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CB7ED27918281003D466F /* RandomDogViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D2CB7D227916A5D003D466F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CB7D327916B87003D466F /* RandomDogViewController.swift */,
+				5D2CB7D527916B9C003D466F /* GenerateDogViewController.swift */,
+				5D2CB7D727916BB1003D466F /* RecentDogsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5D2CB7D927917C25003D466F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CB7E627918082003D466F /* Resource */,
+				5D2CB7E52791807C003D466F /* Request */,
+				5D2CB7DF27917E74003D466F /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5D2CB7E52791807C003D466F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CB7DB27917C67003D466F /* NetworkRequest.swift */,
+				5D2CB7E327918039003D466F /* APIRequest.swift */,
+				5D2CB7F12791871C003D466F /* DataRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		5D2CB7E627918082003D466F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CB7DD27917C92003D466F /* APIResource.swift */,
+				5D2CB7E82791810F003D466F /* RandomDogResource.swift */,
+				5D2CB7F32791889D003D466F /* DataResource.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5D2CB7F527918FDC003D466F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CB7EB2791813E003D466F /* RandomDog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D2CB7F627919000003D466F /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CB7F727919015003D466F /* ImageCache.swift */,
+			);
+			path = ImageCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +240,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D2CB7BE2791698B003D466F /* ViewController.swift in Sources */,
+				5D2CB7DC27917C67003D466F /* NetworkRequest.swift in Sources */,
 				5D2CB7C42791698B003D466F /* RandomDog.xcdatamodeld in Sources */,
+				5D2CB7F827919015003D466F /* ImageCache.swift in Sources */,
+				5D2CB7EE27918281003D466F /* RandomDogViewModel.swift in Sources */,
+				5D2CB7E92791810F003D466F /* RandomDogResource.swift in Sources */,
+				5D2CB7F22791871C003D466F /* DataRequest.swift in Sources */,
 				5D2CB7BA2791698B003D466F /* AppDelegate.swift in Sources */,
+				5D2CB7F42791889D003D466F /* DataResource.swift in Sources */,
+				5D2CB7D827916BB1003D466F /* RecentDogsViewController.swift in Sources */,
+				5D2CB7EC2791813E003D466F /* RandomDog.swift in Sources */,
+				5D2CB7D427916B87003D466F /* RandomDogViewController.swift in Sources */,
+				5D2CB7D627916B9C003D466F /* GenerateDogViewController.swift in Sources */,
+				5D2CB7E027917E74003D466F /* NetworkError.swift in Sources */,
+				5D2CB7DE27917C92003D466F /* APIResource.swift in Sources */,
+				5D2CB7E427918039003D466F /* APIRequest.swift in Sources */,
 				5D2CB7BC2791698B003D466F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

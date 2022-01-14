@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RandomDogResource : APIResource {
+struct RandomDogResource: APIResource {
 
     typealias Response = RandomDogModel
     var urlString: String {

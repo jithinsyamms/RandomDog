@@ -8,12 +8,12 @@
 import UIKit
 
 protocol RandomDogProtocol: AnyObject {
-    func imageDownloaded(image:UIImage)
+    func imageDownloaded(image: UIImage)
 }
 
 class RandomDogViewModel {
 
-    weak var delegate:RandomDogProtocol?
+    weak var delegate: RandomDogProtocol?
 
     func fetchRandomDog() {
       let resource = RandomDogResource()
@@ -21,7 +21,7 @@ class RandomDogViewModel {
         request.execute { result in
             switch result {
             case .success(let result):
-                if let result = result,let message = result.message {
+                if let result = result, let message = result.message {
                     self.fetchImage(imageUrl: message)
                 }
             case .failure(let error):
@@ -37,7 +37,7 @@ class RandomDogViewModel {
             switch result {
             case .success(let result):
                 if let result = result {
-                    if let image = UIImage(data: result){
+                    if let image = UIImage(data: result) {
                         self.delegate?.imageDownloaded(image: image)
                         ImageManager.shared.cacheImage(image: image)
                     }

@@ -9,27 +9,27 @@ import UIKit
 
 class ImageCache {
 
-    var cacheKeys:[NSString]
+    var cacheKeys: [NSString]
     var cache: NSCache<NSString, UIImage>
 
     init() {
         cacheKeys = []
-        cache = NSCache<NSString,UIImage>()
+        cache = NSCache<NSString, UIImage>()
         cache.countLimit = 0
         cache.name = "ImageCache"
     }
 
     func getAllImages() -> [UIImage] {
-        var allImages:[UIImage] = []
+        var allImages: [UIImage] = []
         for key in cacheKeys {
-            if let image = cache.object(forKey: key){
+            if let image = cache.object(forKey: key) {
                 allImages.append(image)
             }
         }
         return allImages
     }
 
-    func cacheImage(key: NSString, image:UIImage) {
+    func cacheImage(key: NSString, image: UIImage) {
         cacheKeys.append(key)
         cache.setObject(image, forKey: key)
     }
@@ -48,6 +48,4 @@ class ImageCache {
         cache.removeObject(forKey: key)
         return key
     }
-
-
 }

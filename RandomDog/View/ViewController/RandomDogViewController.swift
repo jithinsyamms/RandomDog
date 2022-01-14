@@ -17,8 +17,4 @@ class RandomDogViewController: UIViewController {
         generateDog.layer.cornerRadius = 10
         recentDogs.layer.cornerRadius = 10
     }
-    
-
-
-
 }

@@ -23,7 +23,6 @@ class CoreDataManager {
     func getManagedContext() -> NSManagedObjectContext {
         return storeContainer.viewContext
     }
-    
     func saveContext() {
         guard storeContainer.viewContext.hasChanges else {return}
 
@@ -36,7 +35,7 @@ class CoreDataManager {
 
     func getAllDogs() -> [RandomDog] {
         var dogs: [RandomDog] = []
-        let request:NSFetchRequest = RandomDog.fetchRequest()
+        let request: NSFetchRequest = RandomDog.fetchRequest()
         let sortDescriptors = [NSSortDescriptor(key: "key", ascending: true)]
         request.sortDescriptors = sortDescriptors
         do {
@@ -81,4 +80,3 @@ class CoreDataManager {
         }
     }
 }
-

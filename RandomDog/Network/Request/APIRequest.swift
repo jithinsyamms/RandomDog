@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct APIRequest<Resource: APIResource>{
-    let resource:Resource
-    init(resource:Resource){
+struct APIRequest<Resource: APIResource> {
+    let resource: Resource
+    init(resource: Resource) {
         self.resource = resource
     }
 }
 
-extension APIRequest:NetworkRequest{
+extension APIRequest: NetworkRequest {
 
     typealias Response = Resource.Response
     func decode(_ data: Data) -> Response? {
@@ -22,6 +22,6 @@ extension APIRequest:NetworkRequest{
         return try? decoder.decode(Model.self, from: data)
     }
     func execute(withCompletion completion: @escaping (Result<Response?, Error>) -> Void) {
-        load(resource:resource, withCompletion:completion)
+        load(resource: resource, withCompletion: completion)
     }
 }

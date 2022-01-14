@@ -20,7 +20,6 @@ protocol APIResource {
 }
 
 extension APIResource {
-    
     var URL: URL? {
         if !urlString.isEmpty {
             if let components = URLComponents(string: urlString) {

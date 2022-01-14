@@ -9,7 +9,6 @@ import UIKit
 
 class RecentDogsViewController: UIViewController {
 
-    
     @IBOutlet weak var collectionView: UICollectionView!
 
     @IBOutlet weak var clearDogs: UIButton!
@@ -18,7 +17,7 @@ class RecentDogsViewController: UIViewController {
     let footerIdentifier = "RandomDogFooter"
 
     var dogDataModel = RandomDogViewModel()
-    var recentDogs:[UIImage] = []
+    var recentDogs: [UIImage] = []
 
     private let itemsPerRow: CGFloat = 1.2
     private let sectionInsets = UIEdgeInsets(
@@ -30,7 +29,8 @@ class RecentDogsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         clearDogs.layer.cornerRadius = 10
-        collectionView.register(UINib(nibName: "RandomDogCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
+        collectionView.register(UINib(nibName: "RandomDogCell",
+                                      bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
         recentDogs = dogDataModel.getAllImages()
         disableClearButton()
     }
@@ -73,7 +73,6 @@ extension RecentDogsViewController: UICollectionViewDelegateFlowLayout {
                                layout collectionViewLayout: UICollectionViewLayout,
                                sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-
         var totalSpace: CGFloat = 0
         if let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout {
             totalSpace = flowLayout.sectionInset.left
@@ -85,12 +84,8 @@ extension RecentDogsViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: width, height: height )
     }
 
-
     func collectionView( _ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                          insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets
     }
-
-
-
 }

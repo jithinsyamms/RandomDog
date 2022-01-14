@@ -11,12 +11,11 @@ struct DataResource: APIResource {
 
     typealias Response = Data?
 
-    var dataUrl:String
-    init(url:String) {
+    var dataUrl: String
+    init(url: String) {
         dataUrl = url
     }
     var urlString: String {
        dataUrl
     }
 }
-

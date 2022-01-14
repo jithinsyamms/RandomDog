@@ -9,7 +9,7 @@ import UIKit
 
 class ImageManager {
 
-    static let maxImageCount = 20
+    static let maxImageCount = 5
     static let shared = ImageManager()
     private var imageCache: ImageCache
     private var coreData: CoreDataManager
@@ -46,7 +46,6 @@ class ImageManager {
         coreData.deleteAllDogs()
     }
 
-
     func removeOldestIfCacheIsFull() {
         if  imageCache.getCacheSize() >= ImageManager.maxImageCount {
             print("Cache is Full Removing Item")
@@ -54,8 +53,4 @@ class ImageManager {
             coreData.deleteDog(key: key)
         }
     }
-
-
-
-
 }

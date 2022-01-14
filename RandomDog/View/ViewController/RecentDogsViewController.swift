@@ -29,14 +29,22 @@ class RecentDogsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        clearDogs.layer.cornerRadius = 10
         collectionView.register(UINib(nibName: "RandomDogCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
         recentDogs = dogDataModel.getAllImages()
-        print(recentDogs.count)
+        disableClearButton()
     }
 
+    func disableClearButton() {
+        clearDogs.isEnabled = recentDogs.count > 0 ? true : false
+        clearDogs.alpha = recentDogs.count > 0 ? 1 : 0.3
+    }
 
     @IBAction func clearButtonTapped(_ sender: Any) {
         dogDataModel.clearAllDogs()
+        recentDogs = dogDataModel.getAllImages()
+        collectionView.reloadData()
+        disableClearButton()
     }
 }
 

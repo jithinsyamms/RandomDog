@@ -74,6 +74,7 @@ class CoreDataManager {
             let dogs = try getManagedContext().fetch(fetchRequest)
             for dog in dogs {
                 getManagedContext().delete(dog)
+                saveContext()
             }
         } catch let error {
             print("Error in deleteAllDogs \(error)")

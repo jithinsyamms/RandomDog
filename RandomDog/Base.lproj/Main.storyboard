@@ -179,7 +179,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="HTW-Gj-rlj"/>
                                             <constraint firstAttribute="height" constant="40" id="yog-hw-kgX"/>
                                         </constraints>
-                                        <state key="normal" title="Clear Dogs!">
+                                        <state key="normal" title="Clear Dogs">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>

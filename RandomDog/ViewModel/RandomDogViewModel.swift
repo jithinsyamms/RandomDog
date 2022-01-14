@@ -49,10 +49,7 @@ class RandomDogViewModel {
     }
 
     func getAllImages() -> [UIImage] {
-        return ImageCache.shared.getAll()
+        return ImageCache.shared.getAll().reversed()
     }
 
-    func saveImage() {
-      
-    }
 }

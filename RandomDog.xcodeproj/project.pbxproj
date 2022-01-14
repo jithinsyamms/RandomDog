@@ -26,6 +26,8 @@
 		5D2CB7F22791871C003D466F /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7F12791871C003D466F /* DataRequest.swift */; };
 		5D2CB7F42791889D003D466F /* DataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7F32791889D003D466F /* DataResource.swift */; };
 		5D2CB7F827919015003D466F /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7F727919015003D466F /* ImageCache.swift */; };
+		5DB09EEF2791C57D00D1FAA9 /* RandomDogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB09EED2791C57D00D1FAA9 /* RandomDogCell.swift */; };
+		5DB09EF02791C57D00D1FAA9 /* RandomDogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB09EEE2791C57D00D1FAA9 /* RandomDogCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		5D2CB7F12791871C003D466F /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		5D2CB7F32791889D003D466F /* DataResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResource.swift; sourceTree = "<group>"; };
 		5D2CB7F727919015003D466F /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		5DB09EED2791C57D00D1FAA9 /* RandomDogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogCell.swift; sourceTree = "<group>"; };
+		5DB09EEE2791C57D00D1FAA9 /* RandomDogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomDogCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		5D2CB7D027916A43003D466F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5DB09EEB2791C54800D1FAA9 /* RandomDogCell */,
 				5D2CB7D227916A5D003D466F /* ViewController */,
 			);
 			path = View;
@@ -170,6 +175,15 @@
 			path = ImageCache;
 			sourceTree = "<group>";
 		};
+		5DB09EEB2791C54800D1FAA9 /* RandomDogCell */ = {
+			isa = PBXGroup;
+			children = (
+				5DB09EED2791C57D00D1FAA9 /* RandomDogCell.swift */,
+				5DB09EEE2791C57D00D1FAA9 /* RandomDogCell.xib */,
+			);
+			path = RandomDogCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D2CB7C92791698D003D466F /* LaunchScreen.storyboard in Resources */,
+				5DB09EF02791C57D00D1FAA9 /* RandomDogCell.xib in Resources */,
 				5D2CB7C62791698D003D466F /* Assets.xcassets in Resources */,
 				5D2CB7C12791698B003D466F /* Main.storyboard in Resources */,
 			);
@@ -255,6 +270,7 @@
 				5D2CB7E027917E74003D466F /* NetworkError.swift in Sources */,
 				5D2CB7DE27917C92003D466F /* APIResource.swift in Sources */,
 				5D2CB7E427918039003D466F /* APIRequest.swift in Sources */,
+				5DB09EEF2791C57D00D1FAA9 /* RandomDogCell.swift in Sources */,
 				5D2CB7BC2791698B003D466F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

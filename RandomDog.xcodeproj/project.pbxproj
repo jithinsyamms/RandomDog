@@ -28,6 +28,8 @@
 		5D2CB7F827919015003D466F /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CB7F727919015003D466F /* ImageCache.swift */; };
 		5DB09EEF2791C57D00D1FAA9 /* RandomDogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB09EED2791C57D00D1FAA9 /* RandomDogCell.swift */; };
 		5DB09EF02791C57D00D1FAA9 /* RandomDogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DB09EEE2791C57D00D1FAA9 /* RandomDogCell.xib */; };
+		5DB09EF72791DF5E00D1FAA9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB09EF62791DF5E00D1FAA9 /* CoreDataManager.swift */; };
+		5DB09EFA2791F8B000D1FAA9 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB09EF92791F8B000D1FAA9 /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		5D2CB7F727919015003D466F /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		5DB09EED2791C57D00D1FAA9 /* RandomDogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogCell.swift; sourceTree = "<group>"; };
 		5DB09EEE2791C57D00D1FAA9 /* RandomDogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomDogCell.xib; sourceTree = "<group>"; };
+		5DB09EF62791DF5E00D1FAA9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5DB09EF92791F8B000D1FAA9 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		5D2CB7B82791698A003D466F /* RandomDog */ = {
 			isa = PBXGroup;
 			children = (
+				5DB09EF82791F8A100D1FAA9 /* Manager */,
+				5DB09EF52791DF4900D1FAA9 /* CoreData */,
 				5D2CB7F627919000003D466F /* ImageCache */,
 				5D2CB7F527918FDC003D466F /* Model */,
 				5D2CB7D927917C25003D466F /* Network */,
@@ -184,6 +190,22 @@
 			path = RandomDogCell;
 			sourceTree = "<group>";
 		};
+		5DB09EF52791DF4900D1FAA9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5DB09EF62791DF5E00D1FAA9 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5DB09EF82791F8A100D1FAA9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5DB09EF92791F8B000D1FAA9 /* ImageManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,10 +279,12 @@
 			files = (
 				5D2CB7DC27917C67003D466F /* NetworkRequest.swift in Sources */,
 				5D2CB7C42791698B003D466F /* RandomDog.xcdatamodeld in Sources */,
+				5DB09EFA2791F8B000D1FAA9 /* ImageManager.swift in Sources */,
 				5D2CB7F827919015003D466F /* ImageCache.swift in Sources */,
 				5D2CB7EE27918281003D466F /* RandomDogViewModel.swift in Sources */,
 				5D2CB7E92791810F003D466F /* RandomDogResource.swift in Sources */,
 				5D2CB7F22791871C003D466F /* DataRequest.swift in Sources */,
+				5DB09EF72791DF5E00D1FAA9 /* CoreDataManager.swift in Sources */,
 				5D2CB7BA2791698B003D466F /* AppDelegate.swift in Sources */,
 				5D2CB7F42791889D003D466F /* DataResource.swift in Sources */,
 				5D2CB7D827916BB1003D466F /* RecentDogsViewController.swift in Sources */,

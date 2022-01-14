@@ -9,37 +9,45 @@ import UIKit
 
 class ImageCache {
 
-    static let shared = ImageCache()
-    private init(){
+    var cacheKeys:[NSString]
+    var cache: NSCache<NSString, UIImage>
 
-    }
-    lazy var imageCache: NSCache<NSNumber, UIImage> = {
-       var cache = NSCache<NSNumber,UIImage>()
-        cache.countLimit = 20
-        cache.totalCostLimit = 20
-        cache.name = "Image Cache"
-        return cache
-    }()
-
-    var cacheKeys:[NSNumber] = []
-
-    func cacheImage(image:UIImage) {
-        let timeInMillis =  NSNumber(value: Date().timeIntervalSince1970 * 1000)
-        cacheKeys.append(timeInMillis)
-        imageCache.setObject(image, forKey: timeInMillis)
+    init() {
+        cacheKeys = []
+        cache = NSCache<NSString,UIImage>()
+        cache.countLimit = 0
+        cache.name = "ImageCache"
     }
 
-    func clearCache() {
-        imageCache.removeAllObjects()
-    }
-
-    func getAll() -> [UIImage] {
+    func getAllImages() -> [UIImage] {
         var allImages:[UIImage] = []
         for key in cacheKeys {
-            if let image = imageCache.object(forKey: key){
+            if let image = cache.object(forKey: key){
                 allImages.append(image)
             }
         }
         return allImages
     }
+
+    func cacheImage(key: NSString, image:UIImage) {
+        cacheKeys.append(key)
+        cache.setObject(image, forKey: key)
+    }
+
+    func clearCache() {
+        cacheKeys.removeAll()
+        cache.removeAllObjects()
+    }
+
+    func getCacheSize() -> Int {
+        return cacheKeys.count
+    }
+
+    func removeOldestImage() -> NSString {
+        let key = cacheKeys.removeFirst()
+        cache.removeObject(forKey: key)
+        return key
+    }
+
+
 }

@@ -12,6 +12,8 @@ class RecentDogsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
 
+    @IBOutlet weak var clearDogs: UIButton!
+
     let cellIdentifier = "RandomDogCell"
     let footerIdentifier = "RandomDogFooter"
 
@@ -30,6 +32,11 @@ class RecentDogsViewController: UIViewController {
         collectionView.register(UINib(nibName: "RandomDogCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
         recentDogs = dogDataModel.getAllImages()
         print(recentDogs.count)
+    }
+
+
+    @IBAction func clearButtonTapped(_ sender: Any) {
+        dogDataModel.clearAllDogs()
     }
 }
 
@@ -50,7 +57,6 @@ extension RecentDogsViewController: UICollectionViewDataSource {
         return UICollectionViewCell()
     }
 
-
 }
 
 extension RecentDogsViewController: UICollectionViewDelegateFlowLayout {
@@ -58,11 +64,10 @@ extension RecentDogsViewController: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView,
                                layout collectionViewLayout: UICollectionViewLayout,
                                sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let widthPerItem = 20
-        let heightPerItem = 20
 
-//        let widthPerItem = collectionView.bounds.size.width/2.6
-//        let heightPerItem = collectionView.bounds.size.height
+
+        let widthPerItem = collectionView.bounds.size.width/1.2
+        let heightPerItem = collectionView.bounds.size.height
         return CGSize(width: widthPerItem, height: heightPerItem)
     }
 

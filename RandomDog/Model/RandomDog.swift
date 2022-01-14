@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct RandomDog: Codable{
+struct RandomDogModel: Codable{
     let message:String?
 }

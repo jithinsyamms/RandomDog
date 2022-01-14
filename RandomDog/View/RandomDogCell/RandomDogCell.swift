@@ -17,7 +17,7 @@ class RandomDogCell: UICollectionViewCell {
     }
     func setImage(image:UIImage) {
         dogImageView.clipsToBounds = true
-        dogImageView.contentMode = .scaleToFill
+        //dogImageView.contentMode = .scaleToFill
         dogImageView.image = image
     }
 

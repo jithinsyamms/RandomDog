@@ -39,7 +39,7 @@ class RandomDogViewModel {
                 if let result = result {
                     if let image = UIImage(data: result){
                         self.delegate?.imageDownloaded(image: image)
-                        ImageCache.shared.cacheImage(image: image)
+                        ImageManager.shared.cacheImage(image: image)
                     }
                 }
             case .failure(let error):
@@ -47,9 +47,11 @@ class RandomDogViewModel {
             }
         }
     }
-
     func getAllImages() -> [UIImage] {
-        return ImageCache.shared.getAll().reversed()
+        return ImageManager.shared.getAllDogsImagesFromCache().reversed()
+    }
+    func clearAllDogs() {
+        ImageManager.shared.clearAll()
     }
 
 }

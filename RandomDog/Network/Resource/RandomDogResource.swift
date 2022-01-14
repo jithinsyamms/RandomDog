@@ -9,7 +9,7 @@ import Foundation
 
 struct RandomDogResource : APIResource {
 
-    typealias Response = RandomDog
+    typealias Response = RandomDogModel
     var urlString: String {
         "https://dog.ceo/api/breeds/image/random"
     }

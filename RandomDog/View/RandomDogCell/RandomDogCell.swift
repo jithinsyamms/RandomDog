@@ -18,8 +18,6 @@ class RandomDogCell: UICollectionViewCell {
     func setImage(image: UIImage) {
         dogImageView.image = image
         dogImageView.contentMode = .scaleAspectFit
-        height.constant = UIScreen.main.bounds.height
-        width.constant = UIScreen.main.bounds.width
     }
 
 }

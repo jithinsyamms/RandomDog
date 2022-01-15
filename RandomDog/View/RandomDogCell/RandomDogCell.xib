@@ -21,10 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="153" height="113"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZeD-Cr-BiQ">
-                                <rect key="frame" x="0.0" y="0.0" width="153" height="113"/>
+                                <rect key="frame" x="-23.5" y="-43.5" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="K9T-Gg-Wra"/>
-                                    <constraint firstAttribute="width" constant="153" id="fae-tY-Fdh"/>
+                                    <constraint firstAttribute="height" constant="200" id="K9T-Gg-Wra"/>
+                                    <constraint firstAttribute="width" constant="200" id="fae-tY-Fdh"/>
                                 </constraints>
                             </imageView>
                         </subviews>

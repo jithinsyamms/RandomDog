@@ -100,13 +100,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPT-qe-ac2">
-                                <rect key="frame" x="0.0" y="134.5" width="414" height="627"/>
+                                <rect key="frame" x="0.0" y="126.5" width="414" height="697"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zzz-Eg-fNB">
-                                        <rect key="frame" x="41.5" y="30" width="331" height="439"/>
+                                        <rect key="frame" x="52" y="164" width="310.5" height="453"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-je-8xR">
-                                        <rect key="frame" x="152" y="557" width="110" height="40"/>
+                                        <rect key="frame" x="152" y="642" width="110" height="40"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="IfN-57-z1N"/>
@@ -122,10 +122,14 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="zzz-Eg-fNB" firstAttribute="width" secondItem="tPT-qe-ac2" secondAttribute="width" multiplier="0.8" id="SWa-UO-ARW"/>
-                                    <constraint firstItem="zzz-Eg-fNB" firstAttribute="top" secondItem="tPT-qe-ac2" secondAttribute="top" constant="30" id="YmI-AP-PWj"/>
-                                    <constraint firstAttribute="bottom" secondItem="cdb-je-8xR" secondAttribute="bottom" constant="30" id="cpN-Hg-99w"/>
-                                    <constraint firstItem="zzz-Eg-fNB" firstAttribute="height" secondItem="tPT-qe-ac2" secondAttribute="height" multiplier="0.7" id="dP3-9G-4Ne"/>
+                                    <constraint firstItem="zzz-Eg-fNB" firstAttribute="width" secondItem="tPT-qe-ac2" secondAttribute="width" multiplier="0.75" id="SWa-UO-ARW"/>
+                                    <constraint firstItem="cdb-je-8xR" firstAttribute="top" secondItem="zzz-Eg-fNB" secondAttribute="bottom" constant="25" id="Woq-Wp-5vE">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                    <constraint firstItem="zzz-Eg-fNB" firstAttribute="height" secondItem="tPT-qe-ac2" secondAttribute="height" multiplier="0.65" id="YJh-JB-nGs"/>
+                                    <constraint firstAttribute="bottom" secondItem="cdb-je-8xR" secondAttribute="bottom" constant="15" id="cpN-Hg-99w">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="35"/>
+                                    </constraint>
                                     <constraint firstItem="zzz-Eg-fNB" firstAttribute="centerX" secondItem="tPT-qe-ac2" secondAttribute="centerX" id="kDQ-S3-Wrh"/>
                                     <constraint firstItem="cdb-je-8xR" firstAttribute="centerX" secondItem="tPT-qe-ac2" secondAttribute="centerX" id="wd7-3Y-yZj"/>
                                 </constraints>
@@ -135,9 +139,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tPT-qe-ac2" firstAttribute="leading" secondItem="9Gd-mp-kd6" secondAttribute="leading" id="7NB-II-BGR"/>
-                            <constraint firstItem="tPT-qe-ac2" firstAttribute="centerY" secondItem="OEP-j9-pfj" secondAttribute="centerY" id="V3s-0X-sbV"/>
+                            <constraint firstItem="tPT-qe-ac2" firstAttribute="centerY" secondItem="9Gd-mp-kd6" secondAttribute="centerY" id="V3s-0X-sbV"/>
                             <constraint firstItem="9Gd-mp-kd6" firstAttribute="trailing" secondItem="tPT-qe-ac2" secondAttribute="trailing" id="odR-xs-PSI"/>
-                            <constraint firstItem="tPT-qe-ac2" firstAttribute="height" secondItem="OEP-j9-pfj" secondAttribute="height" multiplier="0.7" id="uJK-KN-YlD"/>
+                            <constraint firstItem="tPT-qe-ac2" firstAttribute="height" secondItem="9Gd-mp-kd6" secondAttribute="height" multiplier="0.9" id="uJK-KN-YlD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="so6-yQ-3zU"/>
